@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+   http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+    <servlet>
+        <servlet-name>LogsServlet</servlet-name>
+        <servlet-class>nz.ac.wgtn.swen301.restappender.server.LogsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogsServlet</servlet-name>
+        <url-pattern>/logs</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatsCSVServlet</servlet-name>
+        <servlet-class>nz.ac.wgtn.swen301.restappender.server.StatsCSVServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatsCSVServlet</servlet-name>
+        <url-pattern>/stats/csv</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatsHTMLServlet</servlet-name>
+        <servlet-class>nz.ac.wgtn.swen301.restappender.server.StatsHTMLServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatsHTMLServlet</servlet-name>
+        <url-pattern>/stats/html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatsExcelServlet</servlet-name>
+        <servlet-class>nz.ac.wgtn.swen301.restappender.server.StatsExcelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatsExcelServlet</servlet-name>
+        <url-pattern>/stats/excel</url-pattern>
+    </servlet-mapping>
+</web-app>
